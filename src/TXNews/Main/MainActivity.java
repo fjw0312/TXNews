@@ -25,6 +25,7 @@ import android.widget.AdapterView.OnItemClickListener;
  * 3. 列表左右目录滑动
  * 4. 美化标题栏
  * 5. 设置状态栏颜色   
+ * author：fjw0312
  * */
 
 public class MainActivity extends Activity { 
