@@ -13,4 +13,4 @@ author:本人 fjw0312   邮箱：fjw0312@163.com
           网络请求（网络请求框架Volley）Json解析 图片加载（图片缓存） webView等。
 		  
 应用界面截图如下:
-![](https://github.com/fjw0312/TXNews/raw/master/截图图片示例/Screenshot_20170831-182059.png)
+![](https://github.com/fjw0312/TXNews/raw/master/截图图片示例/Screenshot_20170831-182059.png)  ![](https://github.com/fjw0312/TXNews/raw/master/截图图片示例/Screenshot_20170831-182108.png)
