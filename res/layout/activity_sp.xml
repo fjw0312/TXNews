@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#ffdddddd"
+        android:orientation="horizontal">
+        <TextView 
+            android:id="@+id/Tx_spTop"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="热点"/>
+        <!-- 画间隔线 -->
+        <LinearLayout 
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#ff999999"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp">
+        </LinearLayout>
+        
+        <TextView 
+            android:id="@+id/Tx_spYule"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="娱乐"/>
+        <!-- 画间隔线 -->
+        <LinearLayout 
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#ff999999"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp">
+        </LinearLayout>
+                
+        <TextView 
+            android:id="@+id/Tx_spGaoxiao"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="搞笑"/>   
+        <!-- 画间隔线 --> 
+        <LinearLayout 
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#ff999999"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp">
+        </LinearLayout>
+                
+        <TextView 
+            android:id="@+id/Tx_spJx"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="精选"/>                
+    </LinearLayout>
+    
+    
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <TXNews.customView.MyVideoListView
+            android:id="@+id/MyVideoListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </TXNews.customView.MyVideoListView>       
+    </LinearLayout>
+
+    
+
+    <TXNews.customView.MyNavigationBar
+        android:id="@+id/MyNavigationBar_id"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+    </TXNews.customView.MyNavigationBar>
+    
+</LinearLayout>

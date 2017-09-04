@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myattrs="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    
+    <LinearLayout 
+        android:id="@+id/Ly_id"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="@android:color/holo_red_light"
+        android:orientation="vertical">
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="14"
+            android:gravity="center">
+                <TXNews.customView.CircleImageView 
+		            android:id="@+id/Img_usrLogo"
+		            android:layout_width="80dp"
+		            android:layout_height="80dp"
+		            android:layout_marginBottom="1dp"
+		            android:layout_gravity="bottom"  
+		            android:src="@drawable/use_head"
+		            myattrs:border_width="2dp"
+		            myattrs:border_color="@android:color/holo_blue_light"
+		            myattrs:border_overlay="true">
+	        	</TXNews.customView.CircleImageView>  
+        </LinearLayout>
+        
+        <TextView 
+            android:id="@+id/Tx_usrName"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="点击登录"
+            android:textSize="18sp"
+            android:textColor="#ffffffff"
+            android:textStyle="bold"/>
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="10dp"
+             android:layout_marginRight="10dp"
+            android:background="#99bdbdbd"/>
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:orientation="horizontal">
+                
+            <LinearLayout 
+                android:id="@+id/usr_collect"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <ImageView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/collect_white"/>
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="收藏"
+                    android:textColor="#ffffffff"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+            <LinearLayout 
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="#bdbdbd"/>
+            
+            <LinearLayout 
+                android:id="@+id/usr_history"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <ImageView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/history_white"/>
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="历史"
+                    android:textColor="#ffffffff"
+                    android:textSize="16sp"/>
+            </LinearLayout>  
+
+           <LinearLayout 
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="#bdbdbd"/>
+           
+           <LinearLayout 
+                android:id="@+id/usr_sigin"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <ImageView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/sigin_white"/>
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="签到"
+                    android:textColor="#ffffffff"
+                    android:textSize="16sp"/>
+            </LinearLayout> 
+
+        </LinearLayout>
+        
+        
+    </LinearLayout>
+   
+    
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">      
+       <TXNews.customView.MyUseListView
+	      android:id="@+id/myUseListView_id"
+	      android:layout_width="match_parent"
+	      android:layout_height="match_parent">
+	   </TXNews.customView.MyUseListView>
+	   
+    </LinearLayout>
+        
+
+    <TXNews.customView.MyNavigationBar
+        android:id="@+id/MyNavigationBar_id"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+    </TXNews.customView.MyNavigationBar>
+    
+</LinearLayout>

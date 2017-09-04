@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffdd0000"
+        android:orientation="horizontal">
+        <ImageView 
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/left_gray_db"/>
+        <TextView 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="收藏"
+            android:textStyle="bold"
+            android:textColor="#ffeeeeee"
+            android:textSize="25sp"/>
+        <TextView 
+            android:id="@+id/Tx_manage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:text="管理"
+            android:textColor="#dddddddd"
+            android:textSize="20sp"/>
+    </LinearLayout>
+    
+    <ListView 
+        android:id="@+id/lst_id"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+     </ListView>    
+     
+    <LinearLayout 
+        android:id="@+id/ly_id"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#fff6f6f6"
+        android:orientation="horizontal">
+        <CheckBox 
+            android:id="@+id/CheckBox_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"/>
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="全选"
+            android:textColor="#ffcdcdcd"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/Tx_del"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="#ffbfbfbf"
+            android:textSize="22sp"/>
+        <TextView
+            android:id="@+id/Tx_allDel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center_vertical"
+            android:gravity="center"
+            android:layout_marginRight="5dp"
+            android:text="全部删除"
+            android:textColor="#ffcdcdcd"
+            android:textSize="18sp"/>"
+    </LinearLayout>    
+       
+   
+    
+
+</LinearLayout>

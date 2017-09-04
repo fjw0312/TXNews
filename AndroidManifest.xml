@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="TXNews.Main"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="19" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_logo"
+        android:label="@string/app_name"      
+        android:theme="@style/AppTheme"
+        android:name="myapplication.MyApplication" >
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask"            
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".JxActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name=".SpActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name=".UserActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        
+        <activity
+            android:name=".NewsWebActivity">
+        </activity>    
+          
+        <activity
+            android:name=".LoginActivity" >
+        </activity>
+        <activity
+            android:name=".UserHistoryActivity" >
+        </activity>
+        <activity
+            android:name=".UserColleyActivity">
+        </activity>
+        <activity
+            android:name=".UserLoginActivity">
+        </activity>
+
+        
+       <receiver           
+             android:exported="false"
+             android:name="mybroadcast.MyBroadcastReceiver">
+	        <intent-filter>
+	            <action android:name="Fang.MyBroadcast.Error" />
+	            <action android:name="Fang.MyBroadcast.MSG" />
+	        </intent-filter>
+    	</receiver>
+    </application>
+
+</manifest>

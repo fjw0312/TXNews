@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout 
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+        <!-- 标签滑动棒  -->
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff9f9f9">
+            <HorizontalScrollView 
+                android:id="@+id/HorScrolView_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none">
+                <LinearLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TXNews.customView.MyHorizontalListView
+		                android:id="@+id/MyHorizontalListView"
+		                android:layout_width="match_parent"
+		                android:layout_height="match_parent">
+            	    </TXNews.customView.MyHorizontalListView>
+                </LinearLayout>         
+            </HorizontalScrollView>        
+        </LinearLayout>
+        <!-- 右侧点击按钮 更换为一渐变图-->
+        <LinearLayout 
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_marginRight="0dp"
+            android:background="@drawable/mygradient_shape">
+        </LinearLayout>
+        <!-- 
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_marginRight="0dp"
+            android:src="@drawable/to_transparent"/>
+         -->
+
+    </FrameLayout>
+    
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TXNews.customView.MyNewsListView
+            android:id="@+id/MyNewsListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </TXNews.customView.MyNewsListView>
+        
+    </LinearLayout>
+    
+    
+    <TXNews.customView.MyNavigationBar
+        android:id="@+id/MyNavigationBar_id"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+    </TXNews.customView.MyNavigationBar>
+    <!--  
+    <Button 
+        android:id="@+id/Bn_Request"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:text="Request"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"/>
+	-->
+</LinearLayout>

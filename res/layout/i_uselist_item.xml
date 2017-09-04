@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="0dp">
+        <ImageView 
+	        android:id="@+id/Img_Itemlogo"
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:layout_gravity="left"
+	        android:src="@drawable/item_gray_db"/>
+    
+	    <TextView 
+	        android:id="@+id/Tx_ItemTitle"
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="4"
+	        android:gravity="center_vertical|left"
+	        android:layout_marginLeft="4dp"
+	        android:textSize="18sp"
+	        android:text="ItemTitle"/>
+	    
+	    <TextView 
+	        android:id="@+id/Tx_ItemExtra"
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="6"
+	        android:gravity="center_vertical|right"
+	        android:layout_marginRight="4dp"
+	        android:textSize="15sp"
+	        android:textColor="#8a8a8a"
+	        android:text="ItemEtra"/>
+	    
+	    <ImageView 
+	        android:id="@+id/Img_smsLogo"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:layout_gravity="center_vertical|right"
+	        android:src="@drawable/right_gray_db"/>
+	    </LinearLayout>
+
+    
+</LinearLayout>

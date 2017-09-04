@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/news_item_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_margin="8dp"
+        android:orientation="horizontal">
+        <ImageView
+	        android:id="@+id/imageView"
+	        android:layout_width="80dp"
+	        android:layout_height="65dp"
+	        android:src="@drawable/img_b_default"
+	        android:scaleType="center"/>
+    
+	    <LinearLayout 
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:layout_marginLeft="5dp"
+	        android:layout_marginRight="5dp"         
+	        android:layout_gravity="center"
+	        android:orientation="vertical">
+	        <TextView 
+	            android:id="@+id/title"
+	            android:layout_width="match_parent"
+	            android:layout_height="0dp"
+	            android:layout_weight="7"	            
+	            android:gravity="left|top"
+	            android:text="Title"
+	            android:textSize="18sp"/>
+	        <LinearLayout 
+	            android:layout_width="match_parent"
+	            android:layout_height="0dp"
+	            android:layout_weight="3"	            
+	            android:orientation="horizontal">
+	            <TextView 
+	                android:id="@+id/author"
+	                android:layout_width="wrap_content"
+	                android:layout_height="match_parent"
+	                android:layout_weight="1"
+	                android:gravity="left"
+	                android:text="来源"
+	                android:textColor="@android:color/darker_gray"
+	                android:textSize="12sp"/>
+	             <TextView 
+	                android:id="@+id/date"
+	                android:layout_width="wrap_content"
+	                android:layout_height="match_parent"
+	                 android:layout_weight="1"
+	                android:gravity="right"
+	                android:text="时间"
+	                android:textColor="@android:color/darker_gray"
+	                android:textSize="12sp"/>
+	        </LinearLayout>
+	    </LinearLayout>
+	    
+	    
+    </LinearLayout>
+    
+
+</LinearLayout>

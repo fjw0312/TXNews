@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">天行新闻</string>
+    <string name="hello_world">Hello world!</string>
+    
+    <!-- 为不同item MyNewsListView设置itemTypeId -->
+    <item name="tag_type_a" type="id"></item>
+    <item name="tag_type_b" type="id"></item>
+
+</resources>

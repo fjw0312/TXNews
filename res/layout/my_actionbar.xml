@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/actionbar_shape" >
+    <!-- 标题栏 高度默认都为 48dp -->
+    
+    <TextView
+        android:id="@+id/Tx_actionBar_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"    
+        android:layout_marginLeft="8dp"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textSize="23sp"
+        android:textStyle="normal"
+        android:textColor="#f0f0f0f0"/>
+    
+       
+    <!--  
+    <ImageView 
+        android:id="@+id/img_TitleLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="2dp"
+        android:src="@drawable/title"/>
+    -->
+    
+    <ImageView 
+        android:id="@+id/img_findLogo"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:src="@drawable/transparent"/>
+    
+        
+    <ImageView 
+        android:id="@+id/img_shareLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/search_gray1"/>
+    
+
+</LinearLayout>
