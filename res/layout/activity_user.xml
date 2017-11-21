@@ -156,10 +156,12 @@
     </LinearLayout>
         
 
+<!-- 
     <TXNews.customView.MyNavigationBar
         android:id="@+id/MyNavigationBar_id"
         android:layout_width="match_parent"
         android:layout_height="48dp">
     </TXNews.customView.MyNavigationBar>
+ -->
     
 </LinearLayout>

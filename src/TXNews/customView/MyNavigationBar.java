@@ -1,10 +1,7 @@
 package TXNews.customView;
 
-import TXNews.Main.JxActivity;
-import TXNews.Main.MainActivity;
+
 import TXNews.Main.R;
-import TXNews.Main.SpActivity;
-import TXNews.Main.UserActivity;
 import android.content.Context;
 import android.content.Intent;
 import android.util.AttributeSet;
@@ -138,17 +135,17 @@ public class MyNavigationBar extends LinearLayout{
 			// TODO Auto-generated method stub
 			Intent intent;			
 			if(arg0==view1){
-				intent = new Intent(mContext, MainActivity.class);
-				mContext.startActivity(intent);
+		//		intent = new Intent(mContext, MainActivity.class);
+		//		mContext.startActivity(intent);
 			}else if(arg0==view2){
-				intent = new Intent(mContext, JxActivity.class);
-				mContext.startActivity(intent);
+		//		intent = new Intent(mContext, JxActivity.class);
+		//		mContext.startActivity(intent);
 			}else if(arg0==view3){
-				intent = new Intent(mContext, SpActivity.class);
-				mContext.startActivity(intent);
+		//		intent = new Intent(mContext, SpActivity.class);
+		//		mContext.startActivity(intent);
 			}else if(arg0==view4){
-				intent = new Intent(mContext, UserActivity.class);
-				mContext.startActivity(intent);
+		//		intent = new Intent(mContext, UserActivity.class);
+		//		mContext.startActivity(intent);
 			}
 		
 		}

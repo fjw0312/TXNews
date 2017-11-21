@@ -111,8 +111,8 @@ public class UserColleyActivity extends Activity{
 		public void onClick(View arg0) {
 			// TODO Auto-generated method stub
 			if(arg0==imageView){       //放回 退出页面
-				Intent intent = new Intent(UserColleyActivity.this, UserActivity.class);
-				startActivity(intent);	
+				UserColleyActivity.this.finish();
+				
 			}else if(arg0==Tx_manage){ //进入管理模式
 				if(ShowCheck_flag==0){  //显示 进入管理 选择 模式
 					ShowCheck_flag = 1;

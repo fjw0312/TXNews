@@ -51,8 +51,7 @@ public class UserLoginActivity extends Activity{
 		public void onClick(View arg0) {
 			// TODO Auto-generated method stub
 			if(arg0==img_back){  //·µ»Ø
-				Intent intent = new Intent(UserLoginActivity.this, UserActivity.class);
-				startActivity(intent);
+				UserLoginActivity.this.finish();
 			}else if(arg0==Bn_Login){
 				MyBroadcastReceiver.sendBroad_Error_HAL("µÇÂ¼Ê§°Ü£¡");
 			}else if(arg0==Tx_sigin){
